@@ -1,0 +1,66 @@
+.demo{
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    color: white;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.memo{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-weight: 600;
+
+}
+.temo{
+    background-color: black;
+    height: 72px;
+    
+}
+.memo li{
+    position: relative;
+}
+.memo li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.memo li a:hover{
+    color: #17cf97;
+    
+}
+
+.memo li a:hover::after{
+    content: "";
+    width: 60%;
+    height: 2px;
+    background-color: #17cf97;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    
+}
+
+.toggle{
+    display: none;
+}
+
+
+@media  screen and (max-width: 768px){
+    .memo li a{
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+    .nav-links-mobile{
+        display: flex;
+    }
+     .toggle{
+        display: block;
+    } 
+}
+
+

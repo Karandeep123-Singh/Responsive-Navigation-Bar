@@ -1,0 +1,21 @@
+.gemo{
+    height: calc(100vh - 72px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 80px;
+    color: rgb(117, 239, 117);
+}
+.level{
+    height: 60px;
+    width: 250px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+} 
